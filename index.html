@@ -8,6 +8,8 @@
 <body>
     <h1>Clave</h1>
     <button onclick="comprobarClaves()">Comprobar Claves</button>
+    <button onclick="calcularSueldo()">Calcular Sueldo</button>
+    
     <script>
         function comprobarClaves(){
             let clave1 = prompt("Introduce la clave:");
@@ -17,6 +19,25 @@
             } 
             else {
             alert("Las claves no coinciden.");
+            }
+        }
+        
+        function calcularSueldo(){
+            let sueldo = prompt("Ingrese el sueldo del operario:");
+            let antiguedad = prompt("Ingrese los años de antigüedad del operario:");
+
+            if (sueldo < 500 && antiguedad >= 10) {
+            sueldo = sueldo * 1.2; // Aumento del 20%
+            alert("Tiene un aumento del 20%. Su nuevo sueldo es: " + sueldo);
+            }
+
+            else if (sueldo < 500 && antiguedad < 10) {
+            sueldo = sueldo * 1.05; // Aumento del 5%
+            alert("Tiene un aumento del 5%. Su nuevo sueldo es: " + sueldo);
+            }
+
+            else {
+                alert("No hay cambios. Sueldo a pagar: " + sueldo);
             }
         }
     </script>
