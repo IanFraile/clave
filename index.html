@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clave</h1>
+    <button onclick="comprobarClaves()">Comprobar Claves</button>
+    <script>
+        function comprobarClaves(){
+            let clave1 = prompt("Introduce la clave:");
+            let clave2 = prompt("Vuelve a introducir la clave:");
+            if (clave1 === clave2) {
+            alert("Las claves son iguales.");
+            } 
+            else {
+            alert("Las claves no coinciden.");
+            }
+        }
+    </script>
+</body>
+</html>
