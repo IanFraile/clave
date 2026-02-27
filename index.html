@@ -31,12 +31,12 @@
             alert("Tiene un aumento del 20%. Su nuevo sueldo es: " + sueldo);
             }
 
-            else if (sueldo < 500 && antiguedad < 10) {
+            if (sueldo < 500 && antiguedad < 10) {
             sueldo = sueldo * 1.05; // Aumento del 5%
             alert("Tiene un aumento del 5%. Su nuevo sueldo es: " + sueldo);
             }
 
-            else {
+            if (sueldo=>500){
                 alert("No hay cambios. Sueldo a pagar: " + sueldo);
             }
         }
